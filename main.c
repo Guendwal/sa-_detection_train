@@ -169,7 +169,11 @@ void Sorties_FSM(tEtat *etat, tEtatBarriere *etat_barriere){
             case TRAIN_SORTANT:
                 *etat_barriere = BARRIERE_OUVERTE;
                 break;
+            default:
+                *etat_barriere = BARRIERE_FERMEE;
+                break;
         }
+    
 }
 
 
